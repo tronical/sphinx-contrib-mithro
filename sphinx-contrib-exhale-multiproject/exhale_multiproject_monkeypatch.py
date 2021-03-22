@@ -88,7 +88,6 @@ def exhale_environment_ready(app):
 
         app.config.exhale_args = dict(default_exhale_args)
         app.config.exhale_args.update(project_exhale_args)
-        app.config.exhale_args["containmentFolder"] = os.path.realpath(app.config.exhale_args["containmentFolder"])
         print("="*75)
         print(project)
         print("-"*50)
